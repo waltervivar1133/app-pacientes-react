@@ -1,0 +1,50 @@
+.header__container{
+ 
+  background-color: $dark-blue; 
+  height: 80px;
+  width: 100%;
+  
+  &__block{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: $max-width;
+  }
+}
+.header__logo{
+
+  align-items: center;
+  display: flex;
+  padding: 5px 0 0 40px;
+
+  img{
+    height: 50px ;
+    width: 50px ;
+  }
+  p{
+    color: $white;
+    font-family: $font-family;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 23.44px;
+
+    span {
+      color : $blue;
+      font-family: $font-family;
+    }
+  }
+}
+.header__profile {
+  align-items: center;
+  display: flex;
+  padding: 5px 40px 0 0;
+}
+
+@media (max-width: $phone){
+
+  .header__logo, .header__profile{
+    padding: 5px 0;
+  }
+}
